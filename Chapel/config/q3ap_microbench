@@ -1,0 +1,6 @@
+mode="benchmark"
+problem="q3ap" 
+fileinst="experiments/q3ap/nug12.dat"
+microb_pop=1000
+repetitions=1000
+verbose=false

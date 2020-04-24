@@ -1,0 +1,6 @@
+mode="benchmark"
+problem="qap" 
+fileinst="experiments/q3ap/had16.dat"
+microb_pop=1000
+repetitions=1000
+verbose=false

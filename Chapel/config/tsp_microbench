@@ -1,0 +1,7 @@
+mode="benchmark"
+problem="tsp" 
+fileinst="experiments/tsp/berlin52.tsp"
+fsp_instance=10
+microb_pop=1000
+repetitions=1000
+verbose=false

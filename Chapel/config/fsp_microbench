@@ -1,0 +1,6 @@
+mode="benchmark"
+problem="fsp" 
+fsp_instance=21
+microb_pop=1000
+repetitions=1000
+verbose=false
