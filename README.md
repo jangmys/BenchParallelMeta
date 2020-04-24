@@ -13,7 +13,6 @@ Parallel implementations in **C++/OpenMP**, **Julia**, **Python-Numba** and **Ch
     * **Q3AP-ILS**: *Iterated Local Search* (ILS) metaheuristic using multi-threaded parallel neighborhood evaluations.
     * **Q3AP-GA**: Genetic Algorithm, hybridized with Parallel Local Search.
 
-
 2. **ParallelBatchEval**: A micro-benchmark evaluating the performance of  parallel batch evaluation of solutions for different batchsizes and different cost functions:
 
     * Permutation Flowshop Scheduling Problem (PFSP)
