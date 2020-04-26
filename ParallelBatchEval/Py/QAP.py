@@ -1,8 +1,10 @@
 import numpy as np
 import pickle
+import os.path
 
 # read from input file
-def read_input(filename):
+def read_input(instname):
+    filename="../../instances/nug/"+instname+".dat"
     with open(filename, 'r') as f:
         content = f.read()
         lines = content.split('\n')
@@ -21,18 +23,5 @@ def read_input(filename):
 
     flow = np.array(A[0:dim])
     dist = np.array(A[dim:2 * dim])
-    #C = generateQ3AP(dist,flow,dim)
-
-    #with open('nug25.pkl', 'wb') as save_file:
-    #	pickle.dump([dim,C], save_file)
-
-    # with open('nug12.pkl','rb') as read_file:
-    #     [dim,C] = pickle.load(read_file)
 
     return dist,flow,dim
-
-
-def read_pickle(filename):
-    with open(filename,'rb') as read_file:
-        [dim,C] = pickle.load(read_file)
-    return C,dim

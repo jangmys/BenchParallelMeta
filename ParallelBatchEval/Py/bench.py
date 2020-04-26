@@ -114,13 +114,6 @@ def testQAP(pop):
 #     for i in prange(batchsize):
 #         c=evalQAP(lst[i])
 
-# @njit
-# def popGen(size,batchsize):
-#     lst = List()
-#     for i in range(batchsize):
-#         lst.append(np.random.permutation(size))
-#     return lst
-
 @njit(parallel=True)
 def testFSP(pop):
     costs = np.zeros(batchsize)
@@ -156,7 +149,6 @@ if sys.argv[1] == "QAP":
 
     sol = solution1(np.arange(dim, dtype=np.int64), 0)
     sol.cost = evalQAP(sol.perm)
-    print(sol.cost)
 
     sol1_type = np.dtype([('perm', np.int64, (dim,)), ('cost', np.int64, (1,))])
     pop = np.array([(np.random.permutation(dim), 0) for x in range(batchsize)], dtype=sol1_type)
