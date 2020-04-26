@@ -171,7 +171,7 @@ def runILS(sol,ilsiter):
 
 ####################################
 if len(sys.argv)!=3:
-    print("Need 2 arguments (instance, batchsize), ex: \n\tpython3 ./ilsQ3AP_numba.py nug12 1000. \n\nExit.")
+    print("Need 2 arguments (instance, ILS iters), ex: \n\tpython3 ./ilsQ3AP_numpy.py nug12 1000 \n\nExit.")
     exit()
 
 #read input
