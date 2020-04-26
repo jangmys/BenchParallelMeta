@@ -4,13 +4,12 @@ import time
 import random
 import numpy as np
 
-import QAP
+import Q3AP
 
 ####################################
 POPSIZE = 100
 #read input
-# C,dim = QAP.read_input(sys.argv[1])
-C,dim = QAP.read_pickle(sys.argv[1])
+C,dim = Q3AP.read_input(sys.argv[1])
 
 def generateNhood(dim):
     moves = np.empty([0,4],dtype=np.int64)

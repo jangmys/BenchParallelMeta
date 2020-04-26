@@ -8,13 +8,12 @@ import numba as nb
 from numba import jitclass, int64
 from numba import njit, prange
 
-import QAP
+import Q3AP
 
 ####################################
 POPSIZE = 100
 #read input
-# flow,dist,dim = QAP.read_input(sys.argv[1])
-C,dim = QAP.read_pickle(sys.argv[1])
+C,dim = Q3AP.read_input(sys.argv[1])
 
 def generateNhood(dim):
     moves = np.empty([0,4],dtype=np.int64)
