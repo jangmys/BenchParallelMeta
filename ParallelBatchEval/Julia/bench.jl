@@ -77,7 +77,7 @@ if ARGS[1]=="FSP"
     repeat=1e6/batchsize
 
     pop=[randSol(nbJob) for x in 1:batchsize]
-    testFSP(pop,PTM,nbJob,nbMach)
+    FSPbatch(pop,PTM,nbJob,nbMach)
 
     evaltime=0
     elap = @elapsed for i in 1:repeat
