@@ -11,7 +11,7 @@ OBJS=$(addprefix $(BUILD), $(addsuffix .o, $(OBJ)))
 
 bench:	$(OBJS)
 	@echo $(OBJS)
-	$(CXX) $(OBJS) -o $(BIN)$@ $(OPT) -ldl
+	$(CXX) $(OBJS) -o $@ $(OPT) -ldl
 
 $(BUILD)%.o: $(SRC)%.cpp
 	@mkdir -p $(BUILD)
