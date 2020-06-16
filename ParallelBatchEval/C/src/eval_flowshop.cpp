@@ -17,9 +17,11 @@ eval_flowshop::evalSolution(int * permutation)
         for (int m = 1; m < nbMachines; m++)
             temps[m] = max(temps[m], temps[m - 1]) + tempsJob[m][job];
     }
+    int ret=temps[nbMachines - 1];
+
     delete[]temps;
-    //
-    return temps[nbMachines - 1]; // return makespan
+    
+    return ret; // return makespan
 }
 
 int
